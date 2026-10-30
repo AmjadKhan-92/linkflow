@@ -5,12 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - LinkFlow</title>
   <meta name="description" content="How LinkFlow handles data: local storage, network connections, permissions, security, and your choices.">
-  <meta name="theme-color" content="#0d1016">
+  <style>
+    :root {
+      --bg: #0d1016;
+      --surface: #171d2a;
+      --text: #e8ebf2;
+      --muted: #a3adc2;
+      --primary: #a78bfa;
+      --line: #2a3346;
+      --radius: 12px;
+    }
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 40px;
+    }
+    h1 { font-size: 2.2rem; margin-top: 0; color: #fff; }
+    h2 { font-size: 1.3rem; margin-top: 32px; color: var(--primary); border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+    p, li { color: var(--muted); }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .back { display: inline-block; margin-bottom: 24px; font-weight: 600; }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>LinkFlow is designed to work on your device. We do not operate an account system, advertising network, analytics service, or developer backend that receives your data.</p>
-  <p>The app connects directly to the websites you choose, so those sites receive your IP address and normal request information under their own privacy policies.</p>
-  <p>Privacy questions: martinguptil5392@gmail.com</p>
+  <div class="container">
+    <a class="back" href="../">&larr; Back to Home</a>
+    <h1>Privacy Policy</h1>
+    <p><em>Last updated: October 2026</em></p>
+
+    <h2>1. Summary</h2>
+    <p>LinkFlow is designed to work locally on your device. We do not operate an account system, advertising network, analytics service, or developer backend that receives your personal data or download history.</p>
+    <p>The app connects directly to the websites you choose to retrieve public media, and contacts GitHub solely to check for updates to its open-source media extraction engine (yt-dlp).</p>
+
+    <h2>2. Data Stored on Your Device</h2>
+    <p>The following data is kept locally on your device:</p>
+    <ul>
+      <li>Download history, notes, watermark text, vault metadata, and app settings.</li>
+      <li>Media files saved directly to your device's public <strong>Downloads/LinkFlow</strong> folder.</li>
+      <li>Secure Vault files, encrypted locally in app-private storage protected by Android Keystore and biometrics.</li>
+      <li>Temporary summary and clip working files in app cache.</li>
+    </ul>
+    <p>Android backup is disabled for LinkFlow's history and vault data. Uninstalling the app removes local app-private data, while files saved to Downloads remain intact.</p>
+
+    <h2>3. Network Connections & Third Parties</h2>
+    <p>When you analyze or download a link, LinkFlow requests the source website directly. Those services may log your IP address and request information according to their own privacy policies.</p>
+    <p>LinkFlow contacts GitHub (<github.com> and <api.github.com>) to download extraction engine updates. No personal profile or download history is sent.</p>
+    <p><strong>No advertising, analytics, crash-reporting, or tracking SDKs are included in the app.</strong></p>
+
+    <h2>4. Device Permissions</h2>
+    <ul>
+      <li><strong>Internet & Network State:</strong> To analyze links, download files, and fetch extraction engine updates.</li>
+      <li><strong>Notifications:</strong> To show download progress and completion alerts.</li>
+      <li><strong>Foreground Service:</strong> To keep active downloads running reliably.</li>
+      <li><strong>Wi-Fi & Nearby Devices:</strong> To transfer files directly between local LinkFlow devices.</li>
+      <li><strong>Biometric Credentials:</strong> To securely unlock Secure Vault.</li>
+    </ul>
+
+    <h2>5. Children's Privacy</h2>
+    <p>LinkFlow is not directed to children under 13. We do not knowingly collect personal information from children.</p>
+
+    <h2>6. Contact Us</h2>
+    <p>If you have any questions regarding this Privacy Policy, please contact us at: <a href="mailto:martinguptil5392@gmail.com">martinguptil5392@gmail.com</a></p>
+  </div>
 </body>
 </html>
